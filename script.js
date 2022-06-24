@@ -33,4 +33,6 @@ function adicionar() {
     } else {
         window.alert('Valor inválido ou já encontrado na lista');
     }
+    num.value = '';
+    num.focus();
 }
