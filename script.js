@@ -27,8 +27,9 @@ function adicionar() {
     if (isNumero(num.value) && !inLista(num.value, valores)) {
         //window.alert('Tudo Ok!');
         valores.push(Number(num.value));//esse comando adiciona o valor no vetor
-        let item = window.document.createElement('option');
-        item.text = `Valor ${num.value} adicionado!`;
+        let item = window.document.createElement('option');//element criado dinamicamente tag
+        item.text = `Valor ${num.value} adicionado!`;//item recebe Number e armazena String
+        lista.appendChild(item);//e por fim é adicionado o item na lista/vetor
     } else {
         window.alert('Valor inválido ou encontrado na lista');
     }
