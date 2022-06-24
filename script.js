@@ -44,7 +44,22 @@ function finalizar() {
     } else {
         //Verifica o total de números armazenados no vetor vetor/lista
         let tot = valores.length;
+        let maior = valores[0];
+        let menor = valores[0];
+        let soma = 0;
+        let media = 0;
+        for (let pos in valores) {
+            soma += valores[pos];
+            if (valores[pos] > maior) {
+                maior = valores[pos];
+                if (valores[pos] < menor)
+                menor = valores[pos];
+            }
+        }
         res.innerHTML = '';//inicia a variável vazia
         res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`;
+        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`;
+        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`;
+        res.innerHTML += `<p>A soma de todos os valores temos, ${soma}</p>`;
     }
 }
