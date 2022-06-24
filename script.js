@@ -25,7 +25,8 @@ function inLista(n, l) {
 function adicionar() {
     //Para adicionar verifica se é número e verifica se já está na lista
     if (isNumero(num.value) && !inLista(num.value, valores)) {
-        window.alert('Tudo Ok!');
+        //window.alert('Tudo Ok!');
+        valores.push(Number(num.value));
     } else {
         window.alert('Valor inválido ou encontrado na lista');
     }
