@@ -30,6 +30,7 @@ function adicionar() {
         let item = window.document.createElement('option');//element criado dinamicamente tag
         item.text = `Valor ${num.value} adicionado!`;//item recebe Number e armazena String
         lista.appendChild(item);//e por fim é adicionado o item na lista/vetor
+        res.innerHTML = '';
     } else {
         window.alert('Valor inválido ou já encontrado na lista');
     }
@@ -40,5 +41,10 @@ function adicionar() {
 function finalizar() {
     if (valores.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
+    } else {
+        //Verifica o total de números armazenados no vetor vetor/lista
+        let tot = valores.length;
+        res.innerHTML = '';//inicia a variável vazia
+        res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`;
     }
 }
