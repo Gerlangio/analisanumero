@@ -5,11 +5,21 @@ let res = window.document.querySelector('div#res');
 let valores = []; //O vetor é uma lista
 
 function isNumero(n) {
-
+    //se o número n for maior ou igual a 1 e menor ou igual a 100.
+    if (Number(n) >= 1 && Number(n) <= 100) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function inLista(n, l) {
-
+    //se na lista 'l' o Number 'n' for diferente de -1 indica que o valor não foi encontrado
+    if (l.indexOf(Number(n)) != -1) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function adicionar() {
