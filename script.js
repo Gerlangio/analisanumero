@@ -31,6 +31,6 @@ function adicionar() {
         item.text = `Valor ${num.value} adicionado!`;//item recebe Number e armazena String
         lista.appendChild(item);//e por fim é adicionado o item na lista/vetor
     } else {
-        window.alert('Valor inválido ou encontrado na lista');
+        window.alert('Valor inválido ou já encontrado na lista');
     }
 }
