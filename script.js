@@ -1,8 +1,6 @@
-//Essas são variáveis GLOBAIS
 let num = window.document.querySelector('input#fnum');
-
-//let lista = window.document.querySelector('select#flista');
-//let res = window.document.querySelector('div#res');
+let lista = window.document.querySelector('select#flista');
+let res = window.document.querySelector('div#res');
 let valores = []; //O vetor é uma lista
 
 function isNumero(n) {
